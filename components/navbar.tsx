@@ -7,16 +7,18 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <div className="h-full w-60 flex flex-col items-center z-20 bg-zinc-400">
-      <button className="bg-indigo-400 rounded-xl px-2 py-1" type="button">
-        ok
-      </button>
-      <button className="bg-emerald-400 rounded-xl px-2 py-1" type="button">
-        ng
-      </button>
+    <div className="h-full w-60 flex justify-start gap-x-2 items-center z-20 ">
+      <Button variant="outline">button</Button>
+      <Link href="/dash" className="underline">
+        Dash page
+      </Link>
+      <Link href="/search" className="underline">
+        Search Page
+      </Link>
     </div>
     // <div className="h-[90px] flex p-4 items-center justify-between sticky top-0 z-10 bg-slate-50">
     //   <div className="text-[30px] font-semibold text-blue-400 hover:opacity-70">
